@@ -1,4 +1,2 @@
 # MNLZ
-Diplom MNLZ
-
-Hello
+Диплом ЗВО МНЛЗ
