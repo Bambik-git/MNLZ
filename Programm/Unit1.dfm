@@ -1,8 +1,8 @@
 object Form1: TForm1
-  Left = 77
-  Top = 117
-  Width = 1735
-  Height = 871
+  Left = 235
+  Top = 44
+  Width = 1432
+  Height = 872
   Caption = ' '#1052#1053#1051#1047
   Color = clSkyBlue
   Font.Charset = DEFAULT_CHARSET
@@ -175,22 +175,75 @@ object Form1: TForm1
     Caption = #1058#1077#1084#1087#1077#1088#1072#1090#1091#1088#1072'  '#1086#1082#1088#1091#1078#1072#1102#1097#1077#1081' '#1089#1088#1077#1076#1099
   end
   object Image1: TImage
-    Left = 1048
-    Top = 232
+    Left = 984
+    Top = 236
     Width = 72
     Height = 565
   end
   object Image2: TImage
-    Left = 1260
-    Top = 232
-    Width = 153
+    Left = 1120
+    Top = 236
+    Width = 72
     Height = 565
   end
   object Image3: TImage
-    Left = 1460
-    Top = 232
-    Width = 157
+    Left = 1256
+    Top = 236
+    Width = 72
     Height = 565
+  end
+  object Label24: TLabel
+    Left = 968
+    Top = 816
+    Width = 102
+    Height = 13
+    Caption = #1056#1072#1089#1087#1088#1077#1076#1077#1083#1077#1085#1080#1077' '#8470' 1'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -12
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label25: TLabel
+    Left = 1108
+    Top = 816
+    Width = 102
+    Height = 13
+    Caption = #1056#1072#1089#1087#1088#1077#1076#1077#1083#1077#1085#1080#1077' '#8470' 2'
+  end
+  object Label26: TLabel
+    Left = 1244
+    Top = 816
+    Width = 102
+    Height = 13
+    Caption = #1056#1072#1089#1087#1088#1077#1076#1077#1083#1077#1085#1080#1077' '#8470' 3'
+  end
+  object Label27: TLabel
+    Left = 940
+    Top = 224
+    Width = 28
+    Height = 24
+    Caption = '0 '#1084
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -20
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label28: TLabel
+    Left = 920
+    Top = 784
+    Width = 53
+    Height = 24
+    Caption = '22,5 '#1084
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -20
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    ParentFont = False
   end
   object Edit1: TEdit
     Left = 16
@@ -340,8 +393,8 @@ object Form1: TForm1
     Text = '3'
   end
   object Button1: TButton
-    Left = 888
-    Top = 204
+    Left = 360
+    Top = 308
     Width = 129
     Height = 41
     Caption = #1057#1084#1086#1076#1077#1083#1080#1088#1086#1074#1072#1090#1100
@@ -358,10 +411,10 @@ object Form1: TForm1
     Text = '83700'
   end
   object StringGrid1: TStringGrid
-    Left = 1132
-    Top = 4
-    Width = 145
-    Height = 125
+    Left = 892
+    Top = 16
+    Width = 481
+    Height = 193
     ColCount = 4
     RowCount = 2
     TabOrder = 20
@@ -385,7 +438,7 @@ object Form1: TForm1
   object Chart1: TChart
     Left = 16
     Top = 372
-    Width = 977
+    Width = 849
     Height = 425
     AllowZoom = False
     BackWall.Brush.Color = clWhite
@@ -409,6 +462,7 @@ object Form1: TForm1
       Marks.ArrowLength = 8
       Marks.Visible = False
       SeriesColor = clRed
+      Title = #1057#1077#1088#1077#1076' '#1096#1080#1088#1086#1082#1086#1081
       LinePen.Width = 3
       Pointer.InflateMargins = True
       Pointer.Style = psRectangle
@@ -426,6 +480,7 @@ object Form1: TForm1
       Marks.ArrowLength = 8
       Marks.Visible = False
       SeriesColor = clGreen
+      Title = #1056#1077#1073#1088#1086
       LinePen.Width = 3
       Pointer.InflateMargins = True
       Pointer.Style = psRectangle
@@ -443,6 +498,7 @@ object Form1: TForm1
       Marks.ArrowLength = 8
       Marks.Visible = False
       SeriesColor = clYellow
+      Title = #1057#1077#1088#1076#1094#1077#1074#1080#1085#1072
       LinePen.Width = 3
       Pointer.InflateMargins = True
       Pointer.Style = psRectangle
@@ -460,6 +516,7 @@ object Form1: TForm1
       Marks.ArrowLength = 8
       Marks.Visible = False
       SeriesColor = clBlue
+      Title = #1057#1077#1088#1077#1076' '#1091#1079#1082#1086#1081
       LinePen.Width = 3
       Pointer.InflateMargins = True
       Pointer.Style = psRectangle
@@ -473,14 +530,5 @@ object Form1: TForm1
       YValues.Multiplier = 1
       YValues.Order = loNone
     end
-  end
-  object BitBtn1: TBitBtn
-    Left = 892
-    Top = 252
-    Width = 75
-    Height = 25
-    Caption = 'BitBtn1'
-    TabOrder = 23
-    OnClick = BitBtn1Click
   end
 end

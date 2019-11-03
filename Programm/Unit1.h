@@ -69,11 +69,14 @@ __published:	// IDE-managed Component
         TLineSeries *Series3;
         TLineSeries *Series4;
         TImage *Image1;
-        TBitBtn *BitBtn1;
         TImage *Image2;
         TImage *Image3;
+        TLabel *Label24;
+        TLabel *Label25;
+        TLabel *Label26;
+        TLabel *Label27;
+        TLabel *Label28;
         void __fastcall Button1Click(TObject *Sender);
-        void __fastcall BitBtn1Click(TObject *Sender);
 private:	// User declarations
 public:		// User declarations
         __fastcall TForm1(TComponent* Owner);
