@@ -481,19 +481,73 @@ for (i=36; i <36*2; i++)
 {
 i1=i1+1;
 i2=i2+2;
-        if (tempnext[i-33][8] > 1420)
+
+        if (tempnext[i-33][8] >= 1470 )  {
+        Image1->Canvas->Pixels[i-i2][a]=RGB(255, 255, 0);
+        Image1->Canvas->Pixels[i-i2][a+1]=RGB(255, 255, 0);
+        Image1->Canvas->Pixels[i+1][a]=RGB(255, 255, 0);
+        Image1->Canvas->Pixels[i+1][a+1]=RGB(255, 255, 0);
+        }
+        else if (tempnext[i-33][8] >= 1460 && tempnext[i-33][8] < 1470)  {
+        Image1->Canvas->Pixels[i-i2][a]=RGB(255, 213, 0);
+        Image1->Canvas->Pixels[i-i2][a+1]=RGB(255, 213, 0);
+        Image1->Canvas->Pixels[i+1][a]=RGB(255, 213, 0);
+        Image1->Canvas->Pixels[i+1][a+1]=RGB(255, 213, 0);
+        }
+        else if (tempnext[i-33][8] >= 1450 && tempnext[i-33][8] < 1460)  {
+        Image1->Canvas->Pixels[i-i2][a]=RGB(251, 163, 26);
+        Image1->Canvas->Pixels[i-i2][a+1]=RGB(251, 163, 26);
+        Image1->Canvas->Pixels[i+1][a]=RGB(251, 163, 26);
+        Image1->Canvas->Pixels[i+1][a+1]=RGB(251, 163, 26);
+        }
+        else if (tempnext[i-33][8] >= 1440 && tempnext[i-33][8] < 1450)  {
+        Image1->Canvas->Pixels[i-i2][a]=RGB(243, 114, 32);
+        Image1->Canvas->Pixels[i-i2][a+1]=RGB(243, 114, 32);
+        Image1->Canvas->Pixels[i+1][a]=RGB(243, 114, 32);
+        Image1->Canvas->Pixels[i+1][a+1]=RGB(243, 114, 32);
+        }
+        else if (tempnext[i-33][8] >= 1430 && tempnext[i-33][8] < 1440)  {
+        Image1->Canvas->Pixels[i-i2][a]=RGB(223, 30, 38);
+        Image1->Canvas->Pixels[i-i2][a+1]=RGB(223, 30, 38);
+        Image1->Canvas->Pixels[i+1][a]=RGB(223, 30, 38);
+        Image1->Canvas->Pixels[i+1][a+1]=RGB(223, 30, 38);
+        }
+        else if (tempnext[i-33][8] >= 1420 && tempnext[i-33][8] < 1430)  {
+        Image1->Canvas->Pixels[i-i2][a]=RGB(148, 26, 28);
+        Image1->Canvas->Pixels[i-i2][a+1]=RGB(148, 26, 28);
+        Image1->Canvas->Pixels[i+1][a]=RGB(148, 26, 28);
+        Image1->Canvas->Pixels[i+1][a+1]=RGB(148, 26, 28);
+        }
+        else if (tempnext[i-33][8] < 1420 )  {
+        Image1->Canvas->Pixels[i-i2][a]=RGB(94, 10, 11);
+        Image1->Canvas->Pixels[i-i2][a+1]=RGB(94, 10, 11);
+        Image1->Canvas->Pixels[i+1][a]=RGB(94, 10, 11);
+        Image1->Canvas->Pixels[i+1][a+1]=RGB(94, 10, 11);
+        }
+
+
+
+/*
+        if (tempnext[i-36][8] > 1420)
         {
         Image1->Canvas->Pixels[i-i2][a]=RGB(255, 255, 0);
         Image1->Canvas->Pixels[i-i2][a+1]=RGB(255, 255, 0);
         Image1->Canvas->Pixels[i+1][a]=RGB(255, 255, 0);
         Image1->Canvas->Pixels[i+1][a+1]=RGB(255, 255, 0);
         }
+        else if (tempnext[i-36][8] <= 1420 && tempnext[i-33][8] >= 1400)
+        {
+        Image1->Canvas->Pixels[i-i2][a]=RGB(251, 163, 26);
+        Image1->Canvas->Pixels[i-i2][a+1]=RGB(251, 163, 26);
+        Image1->Canvas->Pixels[i+1][a]=RGB(251, 163, 26);
+        Image1->Canvas->Pixels[i+1][a+1]=RGB(251, 163, 26);
+        }
         else {
         Image1->Canvas->Pixels[i-i2][a]=RGB(165, 42, 42 );
         Image1->Canvas->Pixels[i-i2][a+1]=RGB(165, 42, 42 );
         Image1->Canvas->Pixels[i+1][a]=RGB(165, 42, 42 );
         Image1->Canvas->Pixels[i+1][a+1]=RGB(165, 42, 42 );
-        }
+        }   */
 }
 
  a++;
@@ -706,19 +760,70 @@ for (i=36; i <36*2; i++)
 {
 i1=i1+1;
 i2=i2+2;
-        if (tempnext[i-33][8] > 1350)
+        if (tempnext[i-33][8] >= 1450 )  {
+        Image2->Canvas->Pixels[i-i2][a]=RGB(255, 255, 0) ;
+        Image2->Canvas->Pixels[i-i2][a+1]=RGB(255, 255, 0) ;
+        Image2->Canvas->Pixels[i+1][a]=RGB(255, 255, 0) ;
+        Image2->Canvas->Pixels[i+1][a+1]=RGB(255, 255, 0) ;
+        }
+        else if (tempnext[i-33][8] >= 1430 && tempnext[i-33][8] < 1450)  {
+        Image2->Canvas->Pixels[i-i2][a]=RGB(255, 213, 0) ;
+        Image2->Canvas->Pixels[i-i2][a+1]=RGB(255, 213, 0) ;
+        Image2->Canvas->Pixels[i+1][a]=RGB(255, 213, 0) ;
+        Image2->Canvas->Pixels[i+1][a+1]=RGB(255, 213, 0) ;
+        }
+        else if (tempnext[i-33][8] >= 1410 && tempnext[i-33][8] < 1430)  {
+        Image2->Canvas->Pixels[i-i2][a]=RGB(251, 163, 26);
+        Image2->Canvas->Pixels[i-i2][a+1]=RGB(251, 163, 26);
+        Image2->Canvas->Pixels[i+1][a]=RGB(251, 163, 26);
+        Image2->Canvas->Pixels[i+1][a+1]=RGB(251, 163, 26);
+        }
+        else if (tempnext[i-33][8] >= 1390 && tempnext[i-33][8] < 1410)  {
+        Image2->Canvas->Pixels[i-i2][a]=RGB(243, 114, 32);
+        Image2->Canvas->Pixels[i-i2][a+1]=RGB(243, 114, 32);
+        Image2->Canvas->Pixels[i+1][a]=RGB(243, 114, 32);
+        Image2->Canvas->Pixels[i+1][a+1]=RGB(243, 114, 32);
+        }
+        else if (tempnext[i-33][8] >= 1370 && tempnext[i-33][8] < 1390)  {
+        Image2->Canvas->Pixels[i-i2][a]=RGB(223, 30, 38);
+        Image2->Canvas->Pixels[i-i2][a+1]=RGB(223, 30, 38);
+        Image2->Canvas->Pixels[i+1][a]=RGB(223, 30, 38);
+        Image2->Canvas->Pixels[i+1][a+1]=RGB(223, 30, 38);
+        }
+        else if (tempnext[i-33][8] >= 1350 && tempnext[i-33][8] < 1370)  {
+        Image2->Canvas->Pixels[i-i2][a]=RGB(148, 26, 28);
+        Image2->Canvas->Pixels[i-i2][a+1]=RGB(148, 26, 28);
+        Image2->Canvas->Pixels[i+1][a]=RGB(148, 26, 28);
+        Image2->Canvas->Pixels[i+1][a+1]=RGB(148, 26, 28);
+        }
+        else if (tempnext[i-33][8] < 1350 )  {
+        Image2->Canvas->Pixels[i-i2][a]=RGB(94, 10, 11);
+        Image2->Canvas->Pixels[i-i2][a+1]=RGB(94, 10, 11);
+        Image2->Canvas->Pixels[i+1][a]=RGB(94, 10, 11);
+        Image2->Canvas->Pixels[i+1][a+1]=RGB(94, 10, 11);
+        }
+
+
+       /* if (tempnext[i-33][8] >= 1350)
         {
         Image2->Canvas->Pixels[i-i2][a]=RGB(255, 255, 0);
         Image2->Canvas->Pixels[i-i2][a+1]=RGB(255, 255, 0);
         Image2->Canvas->Pixels[i+1][a]=RGB(255, 255, 0);
         Image2->Canvas->Pixels[i+1][a+1]=RGB(255, 255, 0);
         }
+        else if (tempnext[i-33][8] >= 1330 && tempnext[i-33][8] < 1350)
+        {
+        Image2->Canvas->Pixels[i-i2][a]=RGB(251, 163, 26);
+        Image2->Canvas->Pixels[i-i2][a+1]=RGB(251, 163, 26);
+        Image2->Canvas->Pixels[i+1][a]=RGB(251, 163, 26);
+        Image2->Canvas->Pixels[i+1][a+1]=RGB(251, 163, 26);
+        }
         else {
         Image2->Canvas->Pixels[i-i2][a]=RGB(165, 42, 42 );
         Image2->Canvas->Pixels[i-i2][a+1]=RGB(165, 42, 42 );
         Image2->Canvas->Pixels[i+1][a]=RGB(165, 42, 42 );
         Image2->Canvas->Pixels[i+1][a+1]=RGB(165, 42, 42 );
-        }
+        }   */
 }
 
  a++;
@@ -922,28 +1027,62 @@ i1=-2;
 i2=-2;
 for (i=36; i <36*2; i++)
 {
-i1=i1+1;
+//i1=i1+1;
 i2=i2+2;
-        if (tempnext[i-33][8] > 1420)
-        {
+
+        if (tempnext[i-33][8] >= 1470 )  {
         Image3->Canvas->Pixels[i-i2][a]=RGB(255, 255, 0);
         Image3->Canvas->Pixels[i-i2][a+1]=RGB(255, 255, 0);
         Image3->Canvas->Pixels[i+1][a]=RGB(255, 255, 0);
         Image3->Canvas->Pixels[i+1][a+1]=RGB(255, 255, 0);
         }
-        else {
-        Image3->Canvas->Pixels[i-i2][a]=RGB(165, 42, 42 );
-        Image3->Canvas->Pixels[i-i2][a+1]=RGB(165, 42, 42 );
-        Image3->Canvas->Pixels[i+1][a]=RGB(165, 42, 42 );
-        Image3->Canvas->Pixels[i+1][a+1]=RGB(165, 42, 42 );
+        else if (tempnext[i-33][8] >= 1460 && tempnext[i-33][8] < 1470)  {
+        Image3->Canvas->Pixels[i-i2][a]=RGB(255, 213, 0);
+        Image3->Canvas->Pixels[i-i2][a+1]=RGB(255, 213, 0);
+        Image3->Canvas->Pixels[i+1][a]=RGB(255, 213, 0);
+        Image3->Canvas->Pixels[i+1][a+1]=RGB(255, 213, 0);
+        }
+        else if (tempnext[i-33][8] >= 1450 && tempnext[i-33][8] < 1460)  {
+        Image3->Canvas->Pixels[i-i2][a]=RGB(251, 163, 26);
+        Image3->Canvas->Pixels[i-i2][a+1]=RGB(251, 163, 26);
+        Image3->Canvas->Pixels[i+1][a]=RGB(251, 163, 26);
+        Image3->Canvas->Pixels[i+1][a+1]=RGB(251, 163, 26);
+        }
+        else if (tempnext[i-33][8] >= 1440 && tempnext[i-33][8] < 1450)  {
+        Image3->Canvas->Pixels[i-i2][a]=RGB(243, 114, 32);
+        Image3->Canvas->Pixels[i-i2][a+1]=RGB(243, 114, 32);
+        Image3->Canvas->Pixels[i+1][a]=RGB(243, 114, 32);
+        Image3->Canvas->Pixels[i+1][a+1]=RGB(243, 114, 32);
+        }
+        else if (tempnext[i-33][8] >= 1430 && tempnext[i-33][8] < 1440)  {
+        Image3->Canvas->Pixels[i-i2][a]=RGB(223, 30, 38);
+        Image3->Canvas->Pixels[i-i2][a+1]=RGB(223, 30, 38);
+        Image3->Canvas->Pixels[i+1][a]=RGB(223, 30, 38);
+        Image3->Canvas->Pixels[i+1][a+1]=RGB(223, 30, 38);
+        }
+        else if (tempnext[i-33][8] >= 1420 && tempnext[i-33][8] < 1430)  {
+        Image3->Canvas->Pixels[i-i2][a]=RGB(148, 26, 28);
+        Image3->Canvas->Pixels[i-i2][a+1]=RGB(148, 26, 28);
+        Image3->Canvas->Pixels[i+1][a]=RGB(148, 26, 28);
+        Image3->Canvas->Pixels[i+1][a+1]=RGB(148, 26, 28);
+        }
+        else if (tempnext[i-33][8] < 1420 )  {
+        Image3->Canvas->Pixels[i-i2][a]=RGB(94, 10, 11);
+        Image3->Canvas->Pixels[i-i2][a+1]=RGB(94, 10, 11);
+        Image3->Canvas->Pixels[i+1][a]=RGB(94, 10, 11);
+        Image3->Canvas->Pixels[i+1][a+1]=RGB(94, 10, 11);
         }
 }
 
  a++;
-
-
-
-
+/*
+RGB(255, 213, 0)   - yellow
+RGB(251, 163, 26)  - orange
+RGB(243, 114, 32)  - mid orange
+RGB(223, 30, 38)   - red
+RGB(148, 26, 28)   - mid red
+RGB(94, 10, 11)    - dark red
+*/
 
 //  приравнивание массива temp = tempnext
 for (int i = 0; i < 38; i++)

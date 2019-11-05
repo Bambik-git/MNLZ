@@ -1,8 +1,8 @@
 object Form1: TForm1
-  Left = 252
-  Top = 44
-  Width = 1412
-  Height = 871
+  Left = -8
+  Top = -8
+  Width = 1616
+  Height = 886
   Caption = ' '#1052#1053#1051#1047
   Color = clSkyBlue
   Font.Charset = DEFAULT_CHARSET
@@ -462,6 +462,7 @@ object Form1: TForm1
       Marks.ArrowLength = 8
       Marks.Visible = False
       SeriesColor = clRed
+      Title = #1057#1077#1088#1077#1076' '#1096#1080#1088#1086#1082#1086#1081
       LinePen.Width = 3
       Pointer.InflateMargins = True
       Pointer.Style = psRectangle
@@ -479,6 +480,7 @@ object Form1: TForm1
       Marks.ArrowLength = 8
       Marks.Visible = False
       SeriesColor = clGreen
+      Title = #1056#1077#1073#1088#1086
       LinePen.Width = 3
       Pointer.InflateMargins = True
       Pointer.Style = psRectangle
@@ -496,6 +498,7 @@ object Form1: TForm1
       Marks.ArrowLength = 8
       Marks.Visible = False
       SeriesColor = clYellow
+      Title = #1057#1077#1088#1076#1094#1077#1074#1080#1085#1072
       LinePen.Width = 3
       Pointer.InflateMargins = True
       Pointer.Style = psRectangle
@@ -513,6 +516,7 @@ object Form1: TForm1
       Marks.ArrowLength = 8
       Marks.Visible = False
       SeriesColor = clBlue
+      Title = #1057#1077#1088#1077#1076' '#1091#1079#1082#1086#1081
       LinePen.Width = 3
       Pointer.InflateMargins = True
       Pointer.Style = psRectangle
@@ -526,14 +530,5 @@ object Form1: TForm1
       YValues.Multiplier = 1
       YValues.Order = loNone
     end
-  end
-  object BitBtn1: TBitBtn
-    Left = 500
-    Top = 316
-    Width = 75
-    Height = 25
-    Caption = 'BitBtn1'
-    TabOrder = 23
-    OnClick = BitBtn1Click
   end
 end
