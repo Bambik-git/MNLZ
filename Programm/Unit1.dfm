@@ -1,8 +1,8 @@
 object Form1: TForm1
-  Left = 235
-  Top = 44
-  Width = 1432
-  Height = 872
+  Left = -8
+  Top = -8
+  Width = 1616
+  Height = 886
   Caption = ' '#1052#1053#1051#1047
   Color = clSkyBlue
   Font.Charset = DEFAULT_CHARSET
