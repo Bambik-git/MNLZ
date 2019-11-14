@@ -54,8 +54,8 @@ db1, db2, db3, db4 - переменные для построения графиков
 __fastcall TForm1::TForm1(TComponent* Owner)
         : TForm(Owner)
 {
-Form1->ClientHeight=850;
-Form1->ClientWidth=1450;
+Form1->ClientHeight=1080;
+Form1->ClientWidth=1920;
 //Form1->Name= "MNLZ";
 Form1->BorderStyle=bsSingle; //масштабирование запрещено
 Form1->Position=poScreenCenter; // расположение окна относительно экрана
@@ -1092,11 +1092,13 @@ temp[i][j]=tempnext[i][j];
 }
 
 
-
-
-
+time = time / 60;
+Edit21->Text = FloatToStrF(time, ffFixed, 5,0);
 
 
 
 }
+
+
+
 
