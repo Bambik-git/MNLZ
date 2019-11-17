@@ -1,7 +1,7 @@
 object Form1: TForm1
   Left = 177
   Top = 107
-  Width = 1742
+  Width = 1616
   Height = 886
   Caption = ' '#1052#1053#1051#1047
   Color = clSkyBlue

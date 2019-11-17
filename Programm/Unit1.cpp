@@ -18,7 +18,9 @@ const float t=1e-9;
 int i,j,a, i1, i2 ;
 float cp, l, s, h, d, nz, dz, dtime, speed, tempstart, Ct, Cj, tempsolid, tempsredi,
 templiquid, po, lampda, Q, alpha, c , db1, db2, db3, db4;
-FILE * f;
+FILE * alpha1;
+FILE * alpha2;
+FILE * alpha3;
 int ny, nx;
 
 
@@ -98,8 +100,14 @@ void __fastcall TForm1::Button1Click(TObject *Sender)
 {
 
 // работа с файлом для записи
-f=fopen("Raschet.txt", "wt");
-fprintf(f, "Длина \t\t Сред широкой \t Ребро \t\t Седцевина \t Сред узкой \n");
+alpha1=fopen("Alpha1.txt", "wt");
+alpha2=fopen("Alpha2.txt", "wt");
+alpha3=fopen("Alpha3.txt", "wt");
+fprintf(alpha1, "Длина \t\t Сред широкой \t Ребро \t\t Седцевина \t Сред узкой \n");
+fprintf(alpha2, "Длина \t\t Сред широкой \t Ребро \t\t Седцевина \t Сред узкой \n");
+fprintf(alpha3, "Длина \t\t Сред широкой \t Ребро \t\t Седцевина \t Сред узкой \n");
+
+
 
 float time,z =0; // время и расстояние
 
@@ -457,7 +465,7 @@ db4 = StrToFloat( StringGrid1->Cells[nx+1][ny+1]);
 
 
 
-fprintf(f, "%f \t %f \t %f \t %f \t %f \n",z, db1, db2, db3, db4);   // запись крайних значений в файл
+fprintf(alpha1, "%f \t %f \t %f \t %f \t %f \n",z, db1, db2, db3, db4);   // запись крайних значений в файл
 
     /*
 // Графики
@@ -575,7 +583,7 @@ for (int count = 0; count < nx; count++)
 
 
 
-// -------------------------------------------------Распределение теплоотдачи по ЗВО № 2
+// -------------------Распределение теплоотдачи по ЗВО № 2
 
 
 for(int i=0; i < 38; i++ )
@@ -736,7 +744,7 @@ db4 = StrToFloat( StringGrid1->Cells[nx+1][ny+1]);
 
 
 
-fprintf(f, "%f \t %f \t %f \t %f \t %f \n",z, db1, db2, db3, db4);   // запись крайних значений в файл
+fprintf(alpha2, "%f \t %f \t %f \t %f \t %f \n",z, db1, db2, db3, db4);   // запись крайних значений в файл
 
 /*
 //графики
@@ -1007,7 +1015,7 @@ db4 = StrToFloat( StringGrid1->Cells[nx+1][ny+1]);
 
 
 
-fprintf(f, "%f \t %f \t %f \t %f \t %f \n",z, db1, db2, db3, db4);   // запись крайних значений в файл
+fprintf(alpha3, "%f \t %f \t %f \t %f \t %f \n",z, db1, db2, db3, db4);   // запись крайних значений в файл
 
 
 // Графики
